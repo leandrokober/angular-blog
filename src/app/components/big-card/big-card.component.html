@@ -2,25 +2,22 @@
 
 <div class="big-card__photo">
   <img
-   src="https://www.elitebrains.com/uploads/angular_article.png?_t=1574347140"
+   src = "{{ photoCover }}"
    alt="Foto Notícia Destaque"
-   height="400px"
+   height="300px"
 
    srcset=""
   >
   </div>
 
  <div class="big-card__title">
-  <h1><a href="#">Saiu a nova versão do Angular</a></h1>
+  <h1><a href="#">{{ cardTitle }}</a></h1>
   </div>
 
  <div class="big-card__description">
   <p>
-    <a href="#">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Ipsum eaque voluptatibus at qui, esse molestiae exercitationem
-    similique assumenda reprehenderit hic fuga tempora, porro soluta
-    perferendis. Incidunt hic suscipit reprehenderit error?</a></p>
+    <a href="#"> {{ cardDescription }}</a></p>
  </div>
 </div>
+
 
