@@ -1,19 +1,21 @@
 <div class="container__small-card">
+
   <div class="container__small-card-content">
-      <div class="small-card__photo">
+    <div class="small-card__photo">
       <img
-      src="https://i.ytimg.com/vi/yjBlsSSKcA0/maxresdefault.jpg"
-      alt=""
-      srcset=""
-    >
+        src="{{ photoCover }}"
+        alt=""
+        srcset=""
+      >
     </div>
 
-   <div class="small-card__title">
-    <h1><a href="#">Saiu a nova versão do Angular</a></h1>
+    <div class="small-card__title">
+      <h1><a [routerLink]="['content', id]" >{{ cardTitle }}</a></h1>
     </div>
   </div>
-</div>
-  <div>
+
+  <div class="container__small-card__separator">
     <hr>
   </div>
 
+</div>
